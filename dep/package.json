@@ -1,0 +1,35 @@
+{
+  "name": "dep",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./types/dist/main.d.ts",
+        "default": "./dist/main.js"
+      }
+    },
+    "./sub": {
+      "import": {
+        "types": "./types/dist/sub.d.ts",
+        "default": "./dist/sub.js"
+      }
+    },
+    "./add": {
+      "import": {
+        "types": "./types/dist/add.d.ts",
+        "default": "./dist/add.js"
+      }
+    }
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "typescript": "^4.7.4"
+  }
+}
