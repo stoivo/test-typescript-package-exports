@@ -50,3 +50,11 @@ Type ".help" for more information.
 [Module: null prototype] { default: [Function: add] }
 >
 ```
+
+## Resolved
+
+Issue was resolved with great help by @olivier-martin-sf 👏
+
+I need to set `moduleResolution` to `nodenext` or `node16`. When it is set to node it resolves with CommonJS (I don't know what that means) but node `node16` and `nodenext` supports ECMAScript Module
+
+https://www.typescriptlang.org/tsconfig#moduleResolution
