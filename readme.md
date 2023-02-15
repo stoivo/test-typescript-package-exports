@@ -20,7 +20,6 @@ npm run build
 
 cd ../top/
 npm install
-npm link ../dep
 npm run build
 # > top@1.0.0 build
 # > tsc -p tsconfig.json
